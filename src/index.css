@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+/* Custom Header cho Bảng Tổng hợp Quyết toán: Xanh than đậm chữ trắng */
+.settlement-table .ant-table-thead > tr > th {
+  background-color: #1e293b !important; /* Xanh than đậm Slate-800 */
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  font-size: 13px !important;
+  text-align: center !important;
+  border-right: 1px solid #334155 !important;
+  border-bottom: 2px solid #0f172a !important;
+  padding: 12px 10px !important;
+}
+
+.settlement-table .ant-table-thead > tr > th::before {
+  display: none !important;
+}
+
+.settlement-table .ant-table-thead > tr > th:first-child {
+  border-top-left-radius: 8px !important;
+}
+
+.settlement-table .ant-table-thead > tr > th:last-child {
+  border-top-right-radius: 8px !important;
+  border-right: none !important;
+}
+
+.settlement-table .ant-table-bordered .ant-table-tbody > tr > td {
+  border-color: #e2e8f0 !important;
+  vertical-align: middle !important;
+  padding: 10px 10px !important;
+}
+
+.settlement-table .ant-table-tbody > tr:hover > td {
+  background-color: #f8fafc !important;
+}
+
